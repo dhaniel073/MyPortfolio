@@ -12,6 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400;1,600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="main-content">
+    <script>
+    function downloadCV() {
+      // Replace with the correct relative path to your CV file
+      const fileUrl = "img/Daniel_Chinedu_Emmanuel_CV.pdf";
+
+      const link = document.createElement("a");
+      link.href = fileUrl;
+      link.download = "My_CV.pdf"; // Name for the downloaded file
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
     <div className='loadscreen' id="preloader"><div className="loader spinner-bubble spinner-bubble-primary"></div></div>
  <header class="section sec1 header active" id="home">
         <div class="header-content">
@@ -30,7 +43,7 @@
                     I'm a Web Developer, I love to create And Build beautiful And functional website.
                     More More info Check my info
                 </p>
-                <div class="btn-con">
+                <div class="btn-con" onclick="downloadCV()">
                     <a href="" class="main-btn">
                         <span class="btn-text">Download CV</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
@@ -50,7 +63,7 @@
                     <p>Am Daniel Chinedu, My friends call mem Daniel or Edu.
                     I Born into a family of 6, I Am from the Eastern part of Nigeria - Anambra State. 
                     I Cant Say I know it All because we learn everyday, Even the littlest Piece of Information is counted as learning </p>
-                    <div class="btn-con">
+                    <div class="btn-con" onclick="downloadCV()">
                         <a href="" class="main-btn">
                             <span class="btn-text">Download CV</span>
                             <span class="btn-icon"><i class="fas fa-download"></i></span>
